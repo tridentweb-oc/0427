@@ -53,6 +53,45 @@
             border-radius: 50%;
             transition: 1s;
         }
+
+        .images {
+            position: relative;
+        }
+
+        .images li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: fadein 4s infinite;
+        }
+
+        .images li:first-child {
+            position: relative;
+        }
+
+        .images li:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .images li:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .images li:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        @keyframes fadein {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
     </style>
     <title>title</title>
 </head>
@@ -60,7 +99,7 @@
 <body>
     <!--  ①HTML ... Webサイトの内容を書いていきます。 -->
     <h1>夏白孝明</h1>
-    <img src="https://pbs.twimg.com/profile_images/1109738197058150401/iJ9RMlut_400x400.jpg" alt="">
+    <ul class="images"></ul>
     <p>歌手、作詞家、作曲家、ボカロPである。所属レーベルはAndRec。身長178cm、股下89cm。元ZETA DIVISION所属。</p>
     <h2>好きな曲</h2>
     <ul>
@@ -75,7 +114,7 @@
         </li>
     </ul>
     <a class="site" href="https://www.youtube.com/channel/UCf0XAjyzbtPHJBhZB1SwFLQ"></a>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
