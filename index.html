@@ -17,7 +17,12 @@
 
         body {
             background-color: #091734;
-            color: #FFFFFF
+            color: #FFFFFF;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ::selection {
+            background-color: rgba(207, 151, 64, 0.6);
         }
 
         h2 {
@@ -56,13 +61,15 @@
 
         .images {
             position: relative;
+            height: 360px;
         }
 
         .images li {
             position: absolute;
             top: 0;
             left: 0;
-            animation: fadein 4s infinite;
+            animation: fadein 9s infinite;
+            opacity: 0;
         }
 
         .images li:first-child {
@@ -74,26 +81,27 @@
         }
 
         .images li:nth-child(2) {
-            animation-delay: 1s;
+            animation-delay: 3s;
         }
 
         .images li:nth-child(3) {
-            animation-delay: 2s;
+            animation-delay: 6s;
         }
 
         @keyframes fadein {
 
             0%,
-            100% {
-                opacity: 1;
+            33.3% {
+                opacity: 0;
             }
 
-            50% {
-                opacity: 0;
+            5%,
+            28% {
+                opacity: 1;
             }
         }
     </style>
-    <title>title</title>
+    <title>favoritesongs</title>
 </head>
 
 <body>
@@ -104,16 +112,19 @@
     <h2>好きな曲</h2>
     <ul>
         <li><a class="music"
-                href="https://www.youtube.com/watch?v=7uacnNTk7I8&ab_channel=%E5%A4%8F%E4%BB%A3%E5%AD%9D%E6%98%8E-%E5%A4%8F%E3%81%A8%E5%BD%97%E6%98%9F">ニア</a>
+                href="https://www.youtube.com/watch?v=7uacnNTk7I8&ab_channel=%E5%A4%8F%E4%BB%A3%E5%AD%9D%E6%98%8E-%E5%A4%8F%E3%81%A8%E5%BD%97%E6%98%9F"
+                target="_blank">ニア</a>
         </li>
         <li><a class="music"
-                href="https://www.youtube.com/watch?v=sdR1ZmDXS8w&ab_channel=%E7%94%B2%E6%96%90%E7%94%B0%E6%99%B4%2FKaidaHaru%E3%80%90%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E3%80%91">月が綺麗だ</a>
+                href="https://www.youtube.com/watch?v=sdR1ZmDXS8w&ab_channel=%E7%94%B2%E6%96%90%E7%94%B0%E6%99%B4%2FKaidaHaru%E3%80%90%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E3%80%91"
+                target="_blank">月が綺麗だ</a>
         </li>
         <li><a class="music"
-                href="https://www.youtube.com/watch?v=VsTeCBvfSBs&ab_channel=%E5%A4%A9%E6%9C%88-%E3%81%82%E3%81%BE%E3%81%A4%E3%81%8D-YouTubeOfficialChannel">きみだけは。</a>
+                href="https://www.youtube.com/watch?v=VsTeCBvfSBs&ab_channel=%E5%A4%A9%E6%9C%88-%E3%81%82%E3%81%BE%E3%81%A4%E3%81%8D-YouTubeOfficialChannel"
+                target="_blank">きみだけは。</a>
         </li>
     </ul>
-    <a class="site" href="https://www.youtube.com/channel/UCf0XAjyzbtPHJBhZB1SwFLQ"></a>
+    <a class="site" href="https://www.youtube.com/channel/UCf0XAjyzbtPHJBhZB1SwFLQ" target="_blank"></a>
     <script src="./script.js"></script>
 </body>
 
